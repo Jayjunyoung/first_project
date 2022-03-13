@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>오늘의 폰</title>
+<link href="layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="wrap">
+  <div class="page_header">
+    <div id="top_logo"><a href="/termproject1/main/phonemarket.html">
+    <img src="images/logo.png" width="177" height="80" alt="beautifullife"/></a></div>
+     <div id="top_banner">
+    </div>
+    <div id="top_banner">
+     <ul>
+        <li><a href="/termproject1/purchaser/catalog1.jsp?pcode=1 or pcode=2">상품목록</a></li>
+      <li>
+        </li>
+         <li>
+        </li>
+        <li><a href="/termproject1/purchaser/catalog.jsp?pcode=2">갤럭시</a></li>
+       <li>
+        </li>
+         <li>
+        </li>
+        <li><a href="/termproject1/purchaser/catalog.jsp?pcode=1">아이폰</a></li>
+       <li>
+        </li>
+      </ul>
+    </div>
+    <div id="top_banner">
+      <ul>
+        <li></li>
+        <li><a href="/termproject1/login/loginForm.jsp">로그인</a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+  
+  
+<script type="text/javascript">
+function check(){ 
+	//아이디가 입력이 안되어있을 경우 아이디입력하라는 메세지 출력
+	if(document.fr.userId.value == "" || document.fr.userId.value.length < 0 ){ 
+		alert("아이디를 입력해주세요")
+		history.back()
+		document.fr.userId.focus();
+		return false;
+	}	
+}
+
+function winopen(){
+	if(document.fr.userId.value =="" || document.fr.userId.value.length < 0){
+		alert("아이디를 먼저 입력해주세요")
+		document.fr.userId.focus();
+	}else{
+		window.open("IdCheck.jsp?userId="+document.fr.userId.value,"","width=500, height=300");
+	}
+}
+</script>        
+	<div class="main">
+		<div class="box">
+		<form name="fr" method="post" action="result.jsp" onsubmit="return check();">
+			<div id="tit">오늘의 폰 회원가입</div>
+			<input type="text" name="userId" id="idfield" placeholder="아이디" required/>
+			<input type="button" value="중복확인" id="button" onclick="winopen()">
+
+			<input type="password" name="password" id="pwfield" placeholder="비밀번호" required/>
+			
+			<input type="text" name="name" id="namefield" placeholder="이름" required/>
+			
+			<input type="text" name="email" id="emailfield" placeholder="이메일" required/>
+			
+			<input type="text" name="address" id="address" placeholder="주소" required/>
+			
+			<input type="text" name="birthday"  id ="birthday" placeholder="예시 : 19990125 (8자리)" maxlength="8" required/>
+			
+			
+			
+			<input type="submit" name="sendbtn" id="sendbtn" value="확인" />
+			</form>
+		</div>
+
+
+
+
+
+
+    </div> 
+  <div class="footer"><img src="images/footer.jpg" width="1280" height="200" alt="beautifullife"/></div>
+</div>
+</body>
+</html>

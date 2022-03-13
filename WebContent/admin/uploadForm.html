@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>오늘의 폰</title>
+<link href="layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="wrap">
+  <div class="page_header">
+    <div id="top_logo"><a href="/termproject1/main/phonemarket.html">
+    <img src="images/logo.png" width="177" height="80" alt="beautifullife"/></a></div>
+    <div id="top_banner">
+    </div>
+    <div id="top_banner">
+      <ul>
+       <li><a href="/termproject1/purchaser/catalog1.jsp?pcode=1 or pcode=2">상품목록</a></li>
+      <li>
+        </li>
+         <li>
+        </li>
+        <li><a href="/termproject1/purchaser/catalog.jsp?pcode=2">갤럭시</a></li>
+       <li>
+        </li>
+         <li>
+        </li>
+        <li><a href="/termproject1/purchaser/catalog.jsp?pcode=1">아이폰</a></li>
+       <li>
+        </li>
+      </ul>
+    </div>
+    <div id="top_banner">
+      <ul>
+        <li></li>
+        <li><a href="/termproject1/login/loginForm.jsp">로그아웃</a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+  
+    <script type="text/javascript">
+function check(){ 
+   //아이디가 입력이 안되어있을 경우 아이디입력하라는 메세지 출력
+   if(document.fr.userId.value == "" || document.fr.userId.value.length < 0){ 
+      alert("아이디를 입력해주세요")
+      history.back()
+      document.fr.userId.focus();
+      return false;
+   }   
+}
+
+function winopen(){
+   //새창을 열어서 페이지를 오픈 후 -> 회원아이디정보를 가지고 중복체크
+   //1. 아이디가 없으면 알림창과 진행x
+   if(document.fr.userId.value =="" || document.fr.userId.value.length < 0){
+      alert("아이디를 먼저 입력해주세요")
+      document.fr.userId.focus();
+   }else{
+      //2. 회원정보아이디를 가지고 있는 지 체크하려면 DB에 접근해야한다.
+      //자바스크립트로 어떻게 DB에 접근할까? => 파라미터로 id값을 가져가서 jsp페이지에서 진행하면 된다.
+      window.open("joinIdCheck.jsp?userId="+document.fr.userId.value,"","width=500, height=300");
+   }
+}
+</script> 
+
+                  <form action="upload.jsp" method="post" enctype="multipart/form-data" name="form1">
+                    <table width="680" border="0" cellpadding="0" cellspacing="0" id="registerform">
+                      <tr>
+                        <th><label for="pcodefield">* 제품번호</label></th>
+                        <td>
+                        <input name="pcode" type="text" id="pcodefield"></td>
+                      </tr>
+                      <tr>
+                        <th>* 제조사</th>
+                        <td><p>
+                          <label>
+                            <input type="radio" name="CheckboxGroup2" value="애플" id="CheckboxGroup1_1">
+                          애플</label>
+                          <label>
+                            <input type="radio" name="CheckboxGroup2" value="삼성" id="CheckboxGroup1_2">
+                          삼성</label>
+                          <br>
+                        </p></td>
+                      </tr>
+                      <tr>
+                        <th><label for="modelfield">* 모델명</label></th>
+                        <td>
+                        <input name="mname" type="text" id="modelfield" size="70"></td>
+                      </tr>
+                      <tr>
+                        <th>* 통신사</th>
+                        <td><p>
+                          <label>
+                            <input type="radio" name="CheckboxGroup1" value="SKT" id="CheckboxGroup1_0">
+                            SKT</label>
+                          <label>
+                            <input type="radio" name="CheckboxGroup1" value="KT" id="CheckboxGroup1_1">
+                          KT</label>
+                          <label>
+                            <input type="radio" name="CheckboxGroup1" value="LG" id="CheckboxGroup1_2">
+                          LG</label>
+                          <br>
+                        </p></td>
+                      </tr>
+                      <tr>
+                        <th><label for="capacityfield">* 용량</label></th>
+                        <td>
+                        <input name="capacity" type="text" id="capacityfield"></td>
+                      </tr>
+                      <tr>
+                        <th><label for="pricefield">* 가격</label></th>
+                        <td>
+                        <input name="price" type="text" id="pricefield"></td>
+                      </tr>
+                      <tr>
+                        <th><label for="imagefield">* 제품이미지</label></th>
+                        <td><input type="file" name="pimage" id="imageField"></td>
+                      </tr>
+                      <tr>
+                        <td height="30" colspan="2" align="center" class="btnstyle"><input type="submit" name="ok" id="ok" value="확인">
+                        <input type="reset" name="cancel" id="cancel" value="취소"></td>
+                      </tr>
+                    </table>
+                  </form>
+                  <br><br> <a href = "searchPhone.jsp">리스트 보기</a>
+                  <br><br> <a href = "/termproject1/login/admin.jsp">관리자 홈페이지</a>
+  <div class="footer"><img src="images/footer.jpg" width="1280" height="200" alt="beautifullife"/></div>
+</div>
+
+</body>
+</html>

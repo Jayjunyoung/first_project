@@ -1,0 +1,197 @@
+@charset "utf-8";
+.wrap {
+   height: auto;
+   width: 1280px;
+   clip: rect(0px,0px,0px,0px);
+   margin-right: auto;
+   margin-left: auto;
+   border-top-style: none;
+   border-right-style: none;
+   border-bottom-style: none;
+   border-left-style: none;
+}
+.page_header {
+   float: left;
+   height: 84px;
+   width: 1280px;
+   background-color: #FFF;
+   border-bottom-style: solid;
+   border-bottom-color: #666;
+   background-color: #f0f1f1;
+}
+.wrap .page_header #top_banner ul li a {
+   color: #333;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+#top_logo {
+   float: left;
+   height: 84px;
+   width: 180px;
+}
+#top_banner {
+   float: left;
+   height: 60px;
+   width: 352.1px;
+   text-align: center;
+   margin-top: 0px;
+}
+#top_banner ul {
+   list-style-type: none;
+}
+#top_banner ul li {
+   font-size: 17px;
+   display: block;
+   padding-top: 12px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   float: right;
+   color: #333;
+   font-weight: bold;
+}
+.main {
+   float: left;
+   height: 700px;
+   width: 1280px;
+}
+.main_a {
+   float: left;
+   height: 330px;
+   width: 1280px;
+}
+#main_a_ban {
+   float: left;
+   height: 270px;
+   width: 305px;
+   margin-top: 20px;
+}
+#main_a_ban2 {
+   float: left;
+   width: 305px;
+   margin-left: 20px;
+   height: 270px;
+   margin-top: 20px;
+}
+#main_a_ban3 {
+   float: left;
+   height: 270px;
+   width: 305px;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+#main_a_ban4 {
+   float: left;
+   height: 270px;
+   width: 305px;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+.main_b {
+   float: left;
+   height: 350px;
+   width: 1280px;
+}
+.footer {
+   float: left;
+   height: 200px;
+   width: 1280px;
+}
+.main_banner {
+   float: left;
+   height: 80px;
+   width: 1280px;
+   margin-top: 10px;
+}
+#main_ban {
+   float: left;
+   height: 80px;
+   width: 400px;
+}
+.box {
+   height: 650px;
+   width: 450px;
+   text-align : center;
+   margin-left: 420px;
+}
+.main .box #idfield {
+   height: 50px;
+   width: 400px;
+   margin-top: 150px;
+}
+.box {
+   height: 650px;
+   width: 450px;
+   text-align : center;
+   margin-left: 420px;
+   margin-top: 100px;
+}
+#tit {
+   margin-left: 20px;
+   font-size: 40px;
+    font-family: Montserrat;
+    text-align: left;
+    font-weight: bold;
+    color:blue;
+}
+#ca {
+	margin-top: 150px;
+   margin-left: 20px;
+   font-size: 40px;
+    font-family: 's-core-dream-bold';
+    text-align: left;
+    font-weight: bold;
+}
+.main .box #idfield {
+   height: 50px;
+   width: 400px;
+   margin-top: 50px;
+}
+.main .box #pwfield {
+   height: 50px;
+   width: 400px;
+   margin-top: 50px;
+}
+.main .box #sendbtn {
+   background-color: #3C9;
+   height: 50px;
+   width: 400px;
+   margin-top: 30px;
+}
+#reg {
+   float: right;
+   height: 10px;
+   width: 130px;
+   margin-top: 23px;
+}
+.abselect {
+   float: left;
+   height: 560px;
+   width: 660px;
+   margin-left: 320px;
+   margin-top: 100px;
+}
+#ad_se1 {
+   float: left;
+   height: 250px;
+   width: 300px;
+}
+#ad_se2 {
+   float: left;
+   height: 250px;
+   width: 300px;
+   margin-left: 60px;
+}
+#ad_se3 {
+   float: left;
+   height: 250px;
+   width: 300px;
+   margin-top: 60px;
+}
+#ad_se4 {
+   float: left;
+   height: 250px;
+   width: 300px;
+   margin-top: 60px;
+   margin-left: 60px;
+}

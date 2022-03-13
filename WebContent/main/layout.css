@@ -1,0 +1,239 @@
+@charset "utf-8";
+.wrap {
+   height: auto;
+   width: 1280px;
+   clip: rect(0px,0px,0px,0px);
+   margin-right: auto;
+   margin-left: auto;
+   border-top-style: none;
+   border-right-style: none;
+   border-bottom-style: none;
+   border-left-style: none;
+}
+.page_header {
+   float: left;
+   height: 84px;
+   width: 1280px;
+   border-bottom-style: solid;
+   border-bottom-color: #666;
+   background-color: #f0f1f1;
+}
+.wrap .page_header #top_banner ul li a {
+   color: #333;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+#top_logo {
+   float: left;
+   height: 84px;
+   width: 180px;
+}
+#top_banner {
+   float: left;
+   height: 60px;
+   width: 350px;
+   text-align: center;
+   margin-top: 0px;
+}
+#top_banner ul {
+   list-style-type: none;
+}
+#top_banner ul li {
+   font-size: 17px;
+   display: block;
+   padding-top: 12px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   float: right;
+   color: #333;
+   font-weight: bold;
+}
+.main {
+   float: left;
+   height: 850px;
+   width: 1280px;
+   background : #EDDDD4;
+}
+.main_a {
+   float: left;
+   height: 370px;
+   width: 1280px;
+}
+#main_a_ban {
+   float: left;
+   height: 370px;
+   width: 305px;
+   margin-top: 20px;
+}
+#main_a_ban2 {
+   float: left;
+   width: 305px;
+   margin-left: 20px;
+   height: 370px;
+   margin-top: 20px;
+}
+#main_a_ban3 {
+   float: left;
+   height: 370px;
+   width: 305px;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+#main_a_ban4 {
+   float: left;
+   height: 370px;
+   width: 305px;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+.main_b {
+   float: left;
+   height: 376px;
+   width: 1280px;
+   margin-top: 20px;
+}
+.footer {
+   float: left;
+   height: 200px;
+   width: 1280px;
+}
+.main_banner {
+   float: left;
+   height: 200px;
+   width: 1280px;
+   margin-top: 10px;
+}
+#main_ban {
+   float: left;
+   height: 80px;
+   width: 400px;
+}
+.box {
+   height: 650px;
+   width: 700px;
+   text-align : center;
+   margin-left: 420px;
+}
+.main .box #idfield {
+   float: left;
+   height: 40px;
+   width: 400px;
+   margin-top: 130px;
+}
+.main .box #pwfield {
+   float: left;
+   height: 40px;
+   width: 400px;
+   margin-top: 20px;
+}
+.main .box #namefield {
+   float: left;   
+   height: 40px;
+   width: 400px;
+   margin-top: 20px;
+}
+.main .box #emailfield {
+   float: left;
+   height: 40px;
+   width: 400px;
+   margin-top: 20px;
+}
+.main .box #sendbtn {
+   float: left;
+   background-color: #3C9;
+   height: 50px;
+   width: 400px;
+   margin-top: 20px;
+}
+.main .box #button {
+   background-color: #3C9;
+   height: 40px;
+   width: 100px;
+   margin-top: 130px;
+}
+.main .box #birthday {
+   float: left;
+   height: 40px;
+   width: 400px;
+   margin-top: 20px;
+}
+.main .box #address {
+   float: left;
+   height: 40px;
+   width: 400px;
+   margin-top: 20px;
+}
+#registerform {
+   border-top-width: 6px;
+   border-bottom-width: 5px;
+   border-top-style: solid;
+   border-bottom-style: solid;
+   border-top-color: #dddddd;
+   border-bottom-color: #dddddd;
+}
+
+#registerform th {
+   height: 25px;
+   padding-top: 5px;
+   padding-left: 25px;
+   width: 100px;
+   text-align: left;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: #dddddd;
+   background-color: #efefef;
+}
+#registerform tr td {
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: #dddddd;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   text-align: left;
+}
+
+.page_content .tablestyle {
+   float: left;
+   width: 680px;
+   text-align: center;   
+   padding-top: 20px;
+   padding-bottom: 20px;   
+}
+
+#registerform tr .btnstyle {
+   text-align: center;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+#main_b_banner2 {
+   float: left;
+   height: 376px;
+   width: 305px;
+   margin-left: 20px;
+}
+#main_b_ban {
+   float: left;
+   height: 376px;
+   width: 305px;
+}
+.a_text {
+    width: 305px;
+    height: 30px;
+    position: static;
+    padding: 10px 0 12px;
+    border-top: 1px solid #dcdcdc;
+    border: 0;
+    min-height: 214px;
+    max-height: 214px;
+}
+#main_a_ban_text {
+   float: left;
+   height: 65px;
+   width: 305px;
+   margin-top: 10px;
+   text-align : center;
+   font-weight: bold;
+   font-size: 20px;
+}
